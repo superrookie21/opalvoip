@@ -1,0 +1,12 @@
+<Include>
+   <?if $(var.Architecture) = "x86" ?>
+      <?define PluginDir = "$(env.ProgramFiles)\PTLib Plug Ins" ?>
+      <?define SSLDir = "$(env.ProgramFiles)\OpenSSL-Win32\bin" ?>
+   <?else?>
+      <?define PluginDir = "$(env.ProgramW6432)\PTLib Plug Ins" ?>
+      <?define SSLDir = "$(env.ProgramW6432)\OpenSSL-Win64\bin" ?>
+   <?endif?>
+   <?define WxDir = "$(env.WXDIR)" ?>
+   <?define PTLibDir = "..\..\..\ptlib" ?>
+   <?define OPALDir = "..\.." ?>
+</Include>
